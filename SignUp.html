@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Login or Register </title>
+<link rel="stylesheet" href="css/style_login.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body{
+   background-image:url('images/login.png');
+}
+</style>
+<body>
+  <header class="mainHeader">
+    <nav>
+      <div class="main">
+        <ul class="main-list">
+          <li class="main-list-item"><a href="index.html">Home</a></li>
+          <li class="main-list-item"><a href="demo.html">Demo</a></li>
+          <li class="main-list-item"><a href="about.html">About</a></li>
+          <li class="active main-list-item"><a href="SignUp.html">Signup</a></li>
+          <li class="main-list-item"><a href="login.html">Login</a></li>
+		  <li class="main-list-item"><a href="contact.html">Contact Us</a></li>
+          <li class="main-list-item"><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+ <div class="title">
+      <span class="heading">SignUp</span>
+    </div>
+  </header>
+  <br><br><br><br><br><br><br><br>
+  
+ <div class="register-form"> 
+ <div class="form">
+      <form class="register-form"> 
+   <input type="text" placeholder="Username" required>
+   <input type="password" id="p" placeholder="Password" required>
+   <input type="password" id="confirm_p"placeholder="Confirm password" onblur="confirmPass" required>
+   <script type="text/javascript">
+        function confirmPass(){
+		var pass=document.getElementById("p").value;
+		var Cpass=document.getElementById("confirm_p").value;
+		if(pass!=Cpass)
+		    alert('Wrong confirm password');
+		}
+   </script>
+   <input type="Email" placeholder="Email" required>
+   <input type="number" name="Number" placeholder="phone no" maxlength="10">
+  <button onclick="window.alert('Submitted')">Create</button>
+   <p class= "message">Already Registerd? <a href="#">Login</a> </p>
+   </form>
+    
+ <form class="login-form" action="index.html">
+ <input type="text" placeholder="Username" required>
+ <input type="password" placeholder="password" required>
+ <button>login</button><br>
+ <p class="message"><br>Not Registerd? <a href="#">Register</a> </p>
+ </div>
+ </div>
+
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'> </script>
+ 
+ <script>
+ $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+ 
+ </script>
+</body>
+</html>
+ 

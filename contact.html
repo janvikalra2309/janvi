@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: red;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Contact</title>
+  
+</head>
+<body>
+
+  <header class="mainHeader">
+    <nav>
+      <div class="main">
+        
+        <ul class="main-list">
+          <li class="main-list-item"><a href="index.html">Home</a></li>
+          <li class="main-list-item"><a href="demo.html">Demo</a></li>
+          <li class="main-list-item"><a href="about.html">About</a></li>
+          <li class="main-list-item"><a href="SignUp.html">Signup</a></li>
+          <li class="main-list-item"><a href="login.html">Login</a></li>
+		  <li class="active main-list-item"><a href="contact.html">Contact Us</a></li>
+          <li class="main-list-item"><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!-- Title heading -->
+    <div class="title">
+      <span class="heading">Contact Us</span>
+    </div>
+  </header>
+
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+	<option value="usa">INDIA</option>
+	<option value="usa">Pakistan</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="Any Comments">Any Comments</label>
+    <textarea id="subject" name="subject" placeholder="Write your problem..." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h1 class="logo-text">
+              <span class="logo-span">J</span>anvi
+              <span class="logo-span">K</span>alra
+            </h1>
+            <p class="footer-para">
+              I am a creative, Web Developer with command on Latest Tech stacks
+            </p>
+            <div class="contact">
+              <span><i class="fa fa-phone"></i>&nbsp; +91 8307757313 </span>
+              <span
+                ><i class="fa fa-envelope"></i>&nbsp;
+                janvikalra@gmail.com</span
+              >
+            </div>
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/profile.php?id=100077299447661"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/janvi-kalra-510398185"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a href="https://twitter.com/JanviKalra9?t=22l9jdIID0tKwQrJagxwzA&s=09" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com/vogue.shopforme?igshid=YmMyMTA2M2Y=" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; | Designed By Janvi Kalra
+        </div>
+      </div>
+    </footer>
+    <!-- // Footer -->
+
+</body>
+</html>
